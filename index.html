@@ -1,16 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>CreatorsToolkit | Official Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creator's Toolkit for YT | Official Site</title>
     <style>
-        body { font-family: sans-serif; background: #0f172a; color: white; text-align: center; padding: 50px; }
-        .btn { background: #ef4444; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; }
+        :root {
+            --bg-dark: #0D0D12;
+            --surface-dark: #1A1A22;
+            --primary: #EF4444;
+            --text-primary: #FFFFFF;
+            --text-secondary: #94A3B8;
+        }
+
+        * { margin: 0; padding: 0; box-box-sizing: border-box; }
+
+        body { 
+            font-family: 'Inter', -apple-system, sans-serif; 
+            background: var(--bg-dark); 
+            color: var(--text-primary); 
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 80px 24px; text-align: center; flex-grow: 1; }
+
+        .logo { width: 120px; height: 120px; margin-bottom: 24px; }
+
+        h1 { font-size: 3.5rem; font-weight: 800; letter-spacing: -1px; margin-bottom: 16px; }
+        h1 span { color: var(--primary); }
+
+        p.subtitle { font-size: 1.25rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto 40px; }
+
+        .btn-group { display: flex; gap: 16px; justify-content: center; margin-bottom: 60px; }
+
+        .btn { 
+            background: var(--primary); 
+            color: white; 
+            padding: 16px 36px; 
+            text-decoration: none; 
+            border-radius: 12px; 
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: transform 0.2s, background 0.2s;
+            display: inline-block;
+        }
+        .btn:hover { transform: translateY(-2px); background: #dc2626; }
+
+        .features { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 24px; 
+            margin-top: 60px;
+        }
+
+        .feature-card { 
+            background: var(--surface-dark); 
+            padding: 32px; 
+            border-radius: 20px; 
+            border: 1px solid rgba(255,255,255,0.05);
+            text-align: left;
+        }
+
+        .feature-card h3 { color: var(--primary); margin-bottom: 12px; }
+        .feature-card p { color: var(--text-secondary); font-size: 0.95rem; }
+
+        footer { padding: 40px 24px; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; }
+        .footer-links { margin-bottom: 20px; }
+        .footer-links a { color: var(--text-secondary); text-decoration: none; margin: 0 15px; font-size: 0.9rem; }
+        .footer-links a:hover { color: var(--primary); }
+
+        .copyright { font-size: 0.8rem; color: #475569; }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.5rem; }
+            .btn-group { flex-direction: column; }
+        }
     </style>
 </head>
 <body>
-    <h1>CreatorsToolkit</h1>
-    <p>Professional tools for modern content creators.</p>
-    <br><br>
-    <a href="privacy.html" style="color: #94a3b8;">Privacy Policy</a>
+
+    <div class="container">
+        <div style="font-size: 80px; margin-bottom: 20px;">🚀</div>
+        
+        <h1>Creator's <span>Toolkit</span></h1>
+        <p class="subtitle">Professional-grade AI tools designed to help modern YouTube creators optimize their reach and revenue.</p>
+
+        <div class="btn-group">
+            <a href="#" class="btn">Get it on Google Play</a>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>AI Thumbnail Rater</h3>
+                <p>Upload your thumbnails and let our AI evaluate your visual CTR potential with professional optimization tips.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Tag Extractor</h3>
+                <p>Instantly extract high-performing tags from any YouTube video to boost your SEO and discoverability.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Revenue Calculator</h3>
+                <p>Estimate potential ad earnings and channel valuation using real-world RPM and CPM metrics.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="mailto:ombajin.edrian.j@gmail.com">Support</a>
+        </div>
+        <p class="copyright">&copy; 2026 Annnon Software Development Services. All rights reserved.</p>
+        <p class="copyright" style="margin-top: 8px; font-style: italic;">Developed by Edrian Jabagat Ombajin</p>
+    </footer>
+
 </body>
 </html>
